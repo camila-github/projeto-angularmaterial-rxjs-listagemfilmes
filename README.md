@@ -1,7 +1,6 @@
 ## Projeto: Criação de site com listagem de filmes com Angular Material + RxJS + Json-server
 
-- O objetivo do projeto é criar um site que consta uma lista de filmes, que seja possivel cadastrar, excluir, consultar e editar os filmes utilizando como backend arquivo .json.
-Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Backend será utilizado o json-server para simular um backend com requisições Rest.
+- O objetivo do projeto é criar um site que consta uma lista de filmes, que seja possivel cadastrar, excluir, consultar e editar os filmes utilizando como backend arquivo .json. Na parte do FrontEnd será utilizado o Angular Material + RxJS + SCSS e na parte do Backend será utilizado o json-server para simular um backend com requisições Rest.
 
 - O projeto publicado é referente ao treinamento do Curso Bootcamp - Angular Developer da Digital Innovation One:
 
@@ -28,7 +27,7 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 
 	`$ npm install -g @angular/cli`
 
-- O comando abaixo verifica versao do angular apos instalacao: 
+- O comando abaixo verifica a versão do angular após instalação: 
 
 	`$ ng version`
 
@@ -36,7 +35,7 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 
 	`$ ng new 'nome-do-projeto'`
 
-- Para iniciar o servidor do angular, utilize o comando abaixo
+- Para iniciar o servidor do angular, utilize o comando abaixo:
 
 	`$ npm start`
 
@@ -44,14 +43,14 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 
 	`$ ng serve`
 
-- Para acessar o 'index.html', utilize o link abaixo:
+- O link abaixo é referente a rota que foi criada para acessar o 'index.html':
 
 	[http://localhost:4200/](http://localhost:4200/)
 
 
 ##### ANGULAR MATERIAL 
 
-- É uma biblioteca de componentes para o Angular. O Angular Material é a implementação oficial, para o Angular, do Material Design, a especificação de design para interfaces interativas do Google. O Material Design cobre desde pequenos elementos, como ícones e cores, até elementos maiores como navegação, cards, imagens, entre outros. O Angular Material ja vem junto com o Angular.
+- É uma biblioteca de componentes para o Angular. O Angular Material é a implementação oficial, para o Angular, do Material Design, a especificação de design para interfaces interativas do Google. O Material Design cobre desde pequenos elementos, como ícones e cores, até elementos maiores como navegação, cards, imagens, entre outros.
 
 - Link da documentação:
 
@@ -63,7 +62,8 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 
 - Apos instalação é questionado:
 
-	Choose a prebuilt theme name, or "custom" for a custom theme: (Use arrow keys)
+	````
+  Choose a prebuilt theme name, or "custom" for a custom theme: (Use arrow keys)
 
 	(Eu escolhi o 'Indigo/Pink')
 
@@ -74,28 +74,28 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 	Set up browser animations for Angular Material? (Y/n)
 
 	(Eu escolhi 'y')
-
+  ````
 
 ##### JSON SERVER
 
-- O JSON-Server é um pacote npm que pode ser usado para criar um webservice REST JSON simulando uma API. Nesse projeto o 'json-server' será o responsavel por criar o back-end, ou seja, o 'json-server' irá criar os arquivos mockeados dentro de uma arquivo chamado db.json, com isso será possivel fazer chamadas REST (post, get delete, put ) nesse arquivo, é como se estivesse acessando um banco de dados, mas nesse caso, será acessado um arquivo em json.
+- O JSON-Server é um pacote npm que pode ser usado para criar um webservice REST JSON simulando uma API. Nesse projeto o 'json-server' será o responsável por criar o back-end, ou seja, o 'json-server' irá criar os arquivos mockeados dentro de um arquivo chamado db.json, com isso será possivel fazer chamadas REST (post, get, delete, put ) nesse arquivo, é como se estivesse acessando um banco de dados, mas nesse caso, será acessado um arquivo em json.
 
 - Abaixo o comando para instalar o json-server: 
 
 	`$ npm install -g json-server`
 
-- O comando abaixo é para iniciar o 'json-server'. Detalhe: Se não existir o arquivo db.json o proprio json-server irá criar:
+- O comando abaixo é para iniciar o 'json-server'. Detalhe: Se não existir o arquivo 'db.json' o proprio 'json-server' irá criar:
 
 	`$ json-server --watch db.json`
 
-- Assim que o servidor 'json-server' é iniciado, è possivel acessar conteudo do arquivo 'db.json', no link abaixo. Detalhe: o proprio 'json-server' mostrará no terminal qual o link para fazer a consulta.
+- Assim que o servidor 'json-server' for iniciado, è possivel acessar o conteudo do arquivo 'db.json', na rota abaixo:
 
 	[http://localhost:3000/filmes](http://localhost:3000/filmes)
 
 
 ##### POSTMAN
 
-- Para fins de testes, para fazer requisições Rest(get, post, put, delete) e para verificar se esta funcionando o arquivo 'db.json', utilize o postman. No postman, utilize a rota que o json-server informou quando foi iniciado:
+- Para fins de testes, para fazer requisições Rest(get, post, put, delete) e para verificar se esta funcionando o arquivo 'db.json', utilize o postman. No postman, utilize a rota que foi criada:
 
 	[http://localhost:3000/filmes](http://localhost:3000/filmes)
 
@@ -120,7 +120,7 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 
 ##### CLONAR PROJETO NO GIT
 
-- Ou se preferir, clone o projeto no github, e use o comando abaixo para baixar as pendencias, de acordo com o que esta no package.json. Nesse caso nao é necessario fazer toda a instalação das ferramentas citadas nos topicos acima.
+- Ou se preferir, clone o projeto do github. Use o comando abaixo para baixar as pendencias, de acordo com o que esta no package.json. Nesse caso nao é necessario fazer toda a instalação das ferramentas citadas nos topicos acima.
 
 - Primeiro copie o link no github. Acesse a pasta onde o projeto será salvo, e execute o comando abaixo, no terminal.
 
@@ -144,12 +144,11 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 
 ## CONCEITO UTILIZADOS:
 
-- Aplicação de estilos scss
 - Aplicação de FormBuilder do angular
-- Validacao dos campos do formulario
+- ValidaÇÃo dos campos do formulario
 - Aplicação de Elvis Operator (Operação segura)
 - Criação de serviço para validação de erros
-- Componentizar os Inputs
+- Componentização dos Inputs
 - Aplicação de mensagens de erros dinâmicas
 - Passando array com valores para o componente
 - Criação de serviços e tratamento de retorno da modal
@@ -158,6 +157,7 @@ Na parte do FrontEnd será utilizado o Angular Material + RxJS e na parte do Bac
 - Utilização de HTTP Params
 - Uso do NG-Template
 - Aplicação de melhoria de performance
+- Aplicação de estilos scss
 - Aplicação de CRUD - Cadastrar - Listar - Editar - Excluir - (Sem banco de dados, será utilizado mocks de arquivos .json)
 - Geração do Build - Para geração do build, execute `$ng build` para gerar o compilado do projeto. O projeto vai ser criado dentro do diretório `dist/`. Adicione `--prod` junto comando de build para gerar minificado e pronto para o ambiente de produção.
 
