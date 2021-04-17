@@ -155,5 +155,9 @@
 - Aplicação de estilos scss
 - Aplicação de CRUD - Cadastrar - Listar - Editar - Excluir - (Sem banco de dados, será utilizado mocks de arquivos .json)
 - Geração do Build - Para geração do build, execute `$ng build` para gerar o compilado do projeto. O projeto vai ser criado dentro do diretório `dist/`. Adicione `--prod` junto comando de build para gerar minificado e pronto para o ambiente de produção.
-- Link referencia: O projeto publicado é referente ao treinamento do Curso Bootcamp - Angular Developer da Digital Innovation One: [https://digitalinnovation.one](https://digitalinnovation.one)
+
+
+## Link referencia:
+
+-  O projeto publicado é referente ao treinamento do Curso Bootcamp - Angular Developer da Digital Innovation One: [https://digitalinnovation.one](https://digitalinnovation.one)
 
