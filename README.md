@@ -12,7 +12,7 @@
 	[https://nodejs.org/en/](https://nodejs.org/en/)
 
 
-##### ANGULAR 8
+##### ANGULAR
 
 - Link de referencia: 
 
