@@ -190,19 +190,19 @@
 	O comando abaixo cria o arquivo de serviços dentro da pasta 'core' para comunicaçao (requisições rest) do CRUD de filmes no Backend.  
 
 	````
-  comando: `$ ng g s 'nome da pasta/nome do arquivo de serviço' --nospec`  
-
-	exemplo: `$ ng g s 'core/filmes' --nospec`
+  comando: `$ ng g s 'nome da pasta/nome do arquivo de serviço' --nospec`
+  
+  exemplo: `$ ng g s 'core/filmes' --nospec`
 
 	````
 
  	O comando abaixo cria o arquivo de interface, que é utilizado para garantir, que durante passagem de dados das requisições rest, tenha um padrão de atributos estabelecido pela interface, ou seja, a interface ira validar, se os atributos das requisiçoes estao no padrao, antes de serem armazenados ou consultados no arquivo db.json
 
   ````
-	comando: `$ ng g i 'nome da pasta/nome do arquivo interface' --nospec`  
-	
-	exemplo: `$ ng g i 'shared/models/filme`
-
+	comando: `$ ng g i 'nome da pasta/nome do arquivo interface' --nospec`
+  
+  exemplo: `$ ng g i 'shared/models/filme`
+  
   Atributos adicionados na interface arquivo filme:
   
   export interface Filme {
