@@ -139,6 +139,7 @@
 	`$ json-server --watch db.json`
 
 - E tambem, o 'server' do angular tem que estar iniciado, com um dos comandos abaixo:
+
 	`$ npm start`
 
 	ou 
