@@ -124,7 +124,7 @@
 
 ##### CLONAR PROJETO NO GIT
 
-- Ou se preferir, clone o projeto do github. Use o comando abaixo para baixar as pendencias, de acordo com o que esta no package.json. Nesse caso nao é necessario fazer toda a instalação das ferramentas citadas nos topicos acima.
+- Ou se preferir, clone o projeto do github. Use o comando abaixo para baixar as pendencias, de acordo com o que esta no package.json.
 
 - Primeiro copie o link no github. Acesse a pasta onde o projeto será salvo, e execute o comando abaixo, no terminal.
 
@@ -187,26 +187,25 @@
 - Criação de Modal para tratamento de retorno de mensagem
 - Criação de Rotas, Serviços e Interface:
 
-  ````
-
 	O comando abaixo cria o arquivo de serviços dentro da pasta 'core' para comunicaçao (requisições rest) do CRUD de filmes no Backend.  
 
-	comando: `$ ng g s 'nome da pasta/nome do arquivo de serviço' --nospec`  
+	````
+  comando: `$ ng g s 'nome da pasta/nome do arquivo de serviço' --nospec`  
 
 	exemplo: `$ ng g s 'core/filmes' --nospec`
 
 	````
 
- 	````
-	O comando abaixo cria o arquivo de interface, que é utilizado para garantir, que durante passagem de dados das requisições rest, tenha um padrão de atributos estabelecido pela interface, ou seja, a interface ira validar, se os atributos das requisiçoes estao no padrao, antes de serem armazenados ou consultados no arquivo db.json
+ 	O comando abaixo cria o arquivo de interface, que é utilizado para garantir, que durante passagem de dados das requisições rest, tenha um padrão de atributos estabelecido pela interface, ou seja, a interface ira validar, se os atributos das requisiçoes estao no padrao, antes de serem armazenados ou consultados no arquivo db.json
 
+  ````
 	comando: `$ ng g i 'nome da pasta/nome do arquivo interface' --nospec`  
 	
 	exemplo: `$ ng g i 'shared/models/filme`
 
-	Atributos adicionados na interface arquivo filme:
-
-	export interface Filme {
+  Atributos adicionados na interface arquivo filme:
+  
+  export interface Filme {
   	id?: number;
   	titulo: string;
   	urlFoto?: string;
@@ -216,7 +215,6 @@
   	urlIMDb?: string;
   	genero: string;
 	}
-
 	````
 
 
