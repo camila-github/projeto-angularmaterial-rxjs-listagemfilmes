@@ -109,6 +109,16 @@
       "urlIMDb": "https://www.imdb.com/title/tt2527338/?ref_=vi_md_ti",
       "genero": "Aventura",
       "id": 11
+    },
+    {
+      "titulo": "Caçadores de Obras-Primas",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMjMxMjk4NTM1M15BMl5BanBnXkFtZTgwNjg0MjQ3MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2014-02-14T02:00:00.000Z",
+      "descricao": "An unlikely World War II platoon is tasked to rescue art masterpieces from Nazi thieves and return them to their owners.",
+      "nota": 6.1,
+      "urlIMDb": "https://www.imdb.com/title/tt2177771/?ref_=hm_tpks_tt_i_3_pd_tp1_cp",
+      "genero": "Drama",
+      "id": 12
     }
   ]
 }

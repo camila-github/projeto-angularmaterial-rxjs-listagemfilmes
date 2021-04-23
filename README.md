@@ -1,9 +1,9 @@
 ## Projeto: Criação de site com listagem de filmes com Angular Material + RxJS + Json-server
 
-- O objetivo do projeto é criar um site que consta uma lista de filmes, que seja possivel cadastrar, excluir, consultar e editar os filmes utilizando como backend arquivo .json. Na parte do FrontEnd será utilizado o Angular Material + RxJS + SCSS e na parte do Backend será utilizado o json-server para simular um backend com requisições Rest.
+- O objetivo do projeto é criar um site que consta uma lista de filmes, que será possivel fazer um CRUD, ou seja, cadastrar, excluir, consultar e editar os filmes utilizando como backend arquivo .json. Na parte do FrontEnd será utilizado o Angular Material + RxJS + SCSS e na parte do Backend será utilizado o json-server para simular um backend com requisições Rest.
+
 
 ## Ferramentas utilizadas:
-
 
 ##### NODEJS 
 
@@ -55,7 +55,7 @@
 
 	`$ ng add @angular/material`
 
-- Apos instalação é questionado:
+- Durante a instalação é questionado:
 
 	````
   Choose a prebuilt theme name, or "custom" for a custom theme: (Use arrow keys)
@@ -70,6 +70,7 @@
 
 	(Eu escolhi 'y')
   ````
+
 
 ##### JSON SERVER
 
@@ -94,10 +95,17 @@
 
 	[http://localhost:3000/filmes](http://localhost:3000/filmes)
 
- 
+
 ##### NGX-Infinite-Scroll
 
-- O NGX-Infinite-Scroll faz o Scroll infinito da tela, ou seja, o componente carrega o conteudo da pagina, conforme for rolando a tela.
+- O NGX-Infinite-Scroll faz o Scroll infinito da tela, ou seja, o componente carrega o conteudo da pagina, conforme for rolando a tela. 
+
+- Link de referencia:
+
+	[https://www.npmjs.com/package/ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll)
+
+- Comando para instalar:
+	npm install ngx-infinite-scroll --save
 
 
 ##### RXJS
@@ -140,24 +148,86 @@
 ## CONCEITO UTILIZADOS:
 
 - Aplicação de FormBuilder do angular
-- ValidaÇÃo dos campos do formulario
+- Validação dos campos(inputs) do formulario
 - Aplicação de Elvis Operator (Operação segura)
 - Criação de serviço para validação de erros
-- Componentização dos Inputs
+- Componentização dos Inputs. Com o comando abaixo, é possivel criar o arquivo modulo e o arquivo componente ja no padrao do angular.
+
+	````	
+	Comando para criar o arquivo modulo:
+	
+	`$ ng g m 'nome da pasta/nome do arquivo modulo' --nospec`
+
+	Exemplo:
+
+	`$ ng g m shared/components/campos --nospec`
+	````
+
+	````
+	Comando para criar o arquivo componente:
+
+	`$ ng g c 'nome da pasta/nome do arquivo componente' --nospec`
+
+	Exemplo:
+
+	`$ ng g c shared/components/campos/input-text --nospec`
+	````
+
 - Aplicação de mensagens de erros dinâmicas
-- Passando array com valores para o componente
-- Criação de serviços e tratamento de retorno da modal
-- Aplicação de Scroll Infinito (NGX-Infinite-Scroll)
+- Passagem de array com valores para o componente
+- Aplicação de Scroll Infinito (NGX-Infinite-Scroll). A pagina nao é carregada tudo de uma vez, a pagina carrega conforme for rolando a tela.
 - Aplicação de filtro e ordenação no formulario
-- Utilização de HTTP Params
+- Reutilizaçao de Componentes
 - Uso do NG-Template
-- Aplicação de melhoria de performance
+- Aplicação de melhoria de performance. Uso do 'debounceTime()', no 'input Pesquise aqui'. Aplicação do metodo é para evitar que a pesquisa seja realizada por caracter (isso evita varias consultas ao db.json). A pesquisa nesse caso será feita pela palavra digitada (dessa forma a consulta será feita uma vez apos a digitaçao da palavra)
 - Aplicação de estilos scss
-- Aplicação de CRUD - Cadastrar - Listar - Editar - Excluir - (Sem banco de dados, será utilizado mocks de arquivos .json)
+- Utilização de HTTP Client, HTTP Params
+- Criação de Modal para tratamento de retorno de mensagem
+- Criação de Rotas, Serviços e Interface:
+
+  ````
+
+	O comando abaixo cria o arquivo de serviços dentro da pasta 'core' para comunicaçao (requisições rest) do CRUD de filmes no Backend.  
+
+	comando: `$ ng g s 'nome da pasta/nome do arquivo de serviço' --nospec`  
+
+	exemplo: `$ ng g s 'core/filmes' --nospec`
+
+	````
+
+ 	````
+	O comando abaixo cria o arquivo de interface, que é utilizado para garantir, que durante passagem de dados das requisições rest, tenha um padrão de atributos estabelecido pela interface, ou seja, a interface ira validar, se os atributos das requisiçoes estao no padrao, antes de serem armazenados ou consultados no arquivo db.json
+
+	comando: `$ ng g i 'nome da pasta/nome do arquivo interface' --nospec`  
+	
+	exemplo: `$ ng g i 'shared/models/filme`
+
+	Atributos adicionados na interface arquivo filme:
+
+	export interface Filme {
+  	id?: number;
+  	titulo: string;
+  	urlFoto?: string;
+  	dtLancamento: Date;
+  	descricao?: string;
+  	nota: number;
+  	urlIMDb?: string;
+  	genero: string;
+	}
+
+	````
+
+
+- Uso de CRUD - Cadastrar - Listar - Editar - Excluir - (Sem banco de dados, será utilizado mocks de arquivos .json)
+
 - Geração do Build - Para geração do build, execute `$ng build` para gerar o compilado do projeto. O projeto vai ser criado dentro do diretório `dist/`. Adicione `--prod` junto comando de build para gerar minificado e pronto para o ambiente de produção.
 
 
-## Link referencia:
+## Link referencia
 
 -  O projeto publicado é referente ao treinamento do Curso Bootcamp - Angular Developer da Digital Innovation One: [https://digitalinnovation.one](https://digitalinnovation.one)
 
+## Update
+
+- 22-04-2021 - Atualização do Angular versão 8 para versao 11
+Link: https://update.angular.io

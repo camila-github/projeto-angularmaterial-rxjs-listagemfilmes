@@ -5,6 +5,7 @@ import { ConfigPrams } from '../shared/models/config-prams';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ConfigParamsService {
 
   constructor() { }
