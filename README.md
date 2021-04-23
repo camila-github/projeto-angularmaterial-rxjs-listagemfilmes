@@ -199,7 +199,7 @@
  	O comando abaixo cria o arquivo de interface, que é utilizado para garantir, que durante passagem de dados das requisições rest, tenha um padrão de atributos estabelecido pela interface, ou seja, a interface ira validar, se os atributos das requisiçoes estao no padrao, antes de serem armazenados ou consultados no arquivo db.json
 
   ````
-	comando: `$ ng g i 'nome da pasta/nome do arquivo interface' --nospec`
+  comando: `$ ng g i 'nome da pasta/nome do arquivo interface' --nospec`
   
   exemplo: `$ ng g i 'shared/models/filme`
   
