@@ -105,7 +105,8 @@
 	[https://www.npmjs.com/package/ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll)
 
 - Comando para instalar:
-	npm install ngx-infinite-scroll --save
+
+	`$ npm install ngx-infinite-scroll --save`
 
 
 ##### RXJS
@@ -220,7 +221,7 @@
 
 - Uso de CRUD - Cadastrar - Listar - Editar - Excluir - (Sem banco de dados, será utilizado mocks de arquivos .json)
 
-- Geração do Build - Para geração do build, execute `$ng build` para gerar o compilado do projeto. O projeto vai ser criado dentro do diretório `dist/`. Adicione `--prod` junto comando de build para gerar minificado e pronto para o ambiente de produção.
+- Geração do Build - Para geração do build, execute `$ ng build` para gerar o compilado do projeto. O projeto vai ser criado dentro do diretório `dist/`. Adicione `--prod` junto comando de build para gerar minificado e pronto para o ambiente de produção.
 
 
 ## Link referencia
@@ -229,5 +230,4 @@
 
 ## Update
 
-- 22-04-2021 - Atualização do Angular versão 8 para versao 11
-Link: https://update.angular.io
+- 22-04-2021 - Atualização do Angular versão 8 para versao 11. Link Referencia: [https://update.angular.io](https://update.angular.io)
